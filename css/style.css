@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+/* NAVBAR */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:white;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#333;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url("img/fondo.jpg") center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding-top:80px;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:600;
+}
+
+.hero h2{
+    margin:20px 0;
+    font-weight:400;
+}
+
+.btn{
+    background:#5bc0de;
+    padding:12px 25px;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+/* SOBRE */
+.sobre{
+    padding:100px 80px;
+    text-align:center;
+}
+
+.sobre-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+    margin-top:40px;
+}
+
+.sobre img{
+    width:300px;
+    border-radius:10px;
+}
+
+/* SERVICIOS */
+.servicios{
+    padding:100px 80px;
+    text-align:center;
+}
+
+.servicios-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:40px;
+}
+
+.card{
+    padding:50px 20px;
+    background:linear-gradient(135deg,#4e73df,#1cc88a);
+    color:white;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* CARRUSEL */
+.carousel{
+    position:relative;
+    overflow:hidden;
+    width:80%;
+    margin:100px auto;
+}
+
+.carousel-track{
+    display:flex;
+    transition:transform .5s ease;
+}
+
+.carousel img{
+    width:100%;
+    min-width:100%;
+}
+
+.prev, .next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:white;
+    border:none;
+    font-size:30px;
+    cursor:pointer;
+    padding:10px;
+}
+
+.prev{ left:10px; }
+.next{ right:10px; }
+
+/* PORQUE */
+.porque{
+    padding:100px 80px;
+    text-align:center;
+}
+
+.porque-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:50px;
+    margin-top:40px;
+}
